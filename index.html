@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-03</title>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <!-- Fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/0b03aebe0f.js" crossorigin="anonymous"></script>
+    <!-- daisyUI and Tailwind css CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind CSS Custom Font Added script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        manrope: ["Manrope", "sans-serif"],
+                    },
+                    colors: {
+                        "btn-color": "#ABEF5F",
+                        heading: "#212121",
+                        "sub-heading": "#494949",
+                        "footer": "#1C1C1C",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-manrope">
+    <header class="bg-slate-50">
+        <!-- nav part here  -->
+        <nav class="max-w-screen-xl flex justify-between items-center pt-4 mx-auto px-5 md:px-10 ">
+            <div>
+                <a class="font-extrabold text-2xl lg:text-3xl" href="#">
+                    <i class="fa-solid rogit add README.md
+                    $ git add README.md
+                    tate-45 text-center bg-btn-color h-8 w-8 rounded-full fa-arrow-up"></i>
+                    Tailwind_CSS</a>
+            </div>
+            <div class="hidden lg:block">
+                <ul class="flex gap-7">
+                    <li class="font-bold">Home</li>
+                    <l>Services</l>
+                    <li>Portfolio</li>
+                    <li>Blogs</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-2">
+                <div class=" hidden md:inline-flex items-center gap-2">
+                    <div
+                        class="flex justify-center items-center cursor-pointer text-center bg-white border h-8 w-8 rounded-full">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div
+                        class="flex justify-center items-center cursor-pointer text-center bg-white border h-8 w-8 rounded-full">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <button
+                        class=" flex items-center justify-center font-extrabold text-xl gap-1 bg-btn-color rounded-full px-5 py-5">
+                        Book Consult <i
+                            class="fa-solid rotate-45 text-center bg-black text-whi h-8 w-8 rounded-full fa-arrow-up"></i>
+                    </button>
+                </div>
+                <div class="flex items-center gap-4 lg:hidden">
+                    <div
+                        class="flex justify-center items-center cursor-pointer text-center bg-white border h-8 w-8 rounded-full">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero section start  -->
+        <section class=" max-w-screen-xl pt-4 pb-5 mx-auto  px-5 md:px-10">
+            <div class="flex justify-between items-center flex-col gap-5 text-center">
+                <img src="./assets/banner.png" alt="photo">
+                <h1 class="text-heading text-center font-extrabold text-3xl md:text-4xl lg:text-6xl">A barn house of
+                    this design has a striking appearance</h1>
+                <p class="text-sub-heading  font-bold">This barn house design combines rustic charm with modern appeal.
+                    High ceilings, large windows, and natural materials create an open, airy space. Its warm, inviting
+                    atmosphere makes it both practical and visually unique.</p>
+                <button
+                    class=" w-full md:w-auto flex items-center justify-center text-xl font-extrabold gap-1 bg-green-200 rounded-full px-5 py-3">
+                    Book Consult <i
+                        class="fa-solid rotate-45 text-center bg-btn-color  h-8 w-8 rounded-full fa-arrow-up"></i>
+                </button>
+            </div>
+        </section>
+    </header>
+
+    <main class="bg-gray-100">
+        <!-- We design thoughtful, liveable spaces section start here  -->
+        <section
+            class="max-w-screen-xl my-20 py-12 grid gap-8 grid-cols-1 lg:grid-cols-2 justify-between  mx-auto px-5 md:px-10">
+            <!-- text content area  -->
+            <div class=" relative space-y-3 lg:space-y-8 ">
+                <div class="absolute -left-10 -top-5 hidden lg:block">
+                    <img src="./assets/Vector.png" alt="Vector">
+                </div>
+                <button class="bg-white py-2 px-4 rounded-full"><i class="fa-solid fa-arrow-right"></i> About
+                    us</button>
+                <h2 class="text-heading font-bold text-2xl md:text-3xl lg:text-4xl ">We design thoughtful, liveable
+                    spaces</h2>
+                <p class="font-medium text-sub-heading">The barn house captivates with its blend of rustic charm and
+                    modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <!-- box container  -->
+                <div class="lg:space-y-6 flex flex-col md:flex-row lg:flex-col gap-4 items-center justify-center">
+                    <!-- box one -->
+                    <div class="grid grid-cols-4 items-start  p-4 bg-white rounded-2xl md:p-6">
+                        <div>
+                            <img src="./assets/commercial.png" alt="photo">
+                        </div>
+                        <div class="col-span-3">
+                            <p class="text-sub-heading font-extrabold text-base lg:text-xl">Commercial</p>
+                            <p>Commercial advertising is a strategic communication aimed at promoting products</p>
+                        </div>
+                    </div>
+                    <!-- box two  -->
+                    <div class="grid grid-cols-4 items-start  p-4 bg-white rounded-2xl md:p-6">
+                        <div>
+                            <img src="./assets/residential.png" alt="photo">
+                        </div>
+                        <div class="col-span-3">
+                            <p class="text-sub-heading font-extrabold text-base lg:text-xl">Residential</p>
+                            <p>Commercial advertising is a strategic communication aimed at promoting products</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- image content  -->
+            <div>
+                <img class="w-full h-full bg-cover bg-center" src="./assets/Rectangle.png" alt="photo">
+            </div>
+        </section>
+
+        <!-- client section optional. empty section here  -->
+        <section></section>
+
+        <!-- Our Works Process section start here  -->
+        <section class="max-w-screen-xl my-20 mx-auto py-12 px-5 md:px-10">
+            <div class="text-center flex flex-col gap-6 items-center justify-center">
+                <button class="bg-gray-200 py-2 px-4 rounded-full"><i class="fa-solid fa-arrow-right"></i> How we
+                    works</button>
+                <h2 class="text-heading font-bold text-2xl md:text-3xl lg:text-4xl ">Our Works Process</h2>
+                <p class="font-medium text-sub-heading">The barn house captivates with its blend of rustic charm and
+                    modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <!-- box container here  -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+                <!-- box 01  -->
+                <div class="p-6 bg-[#E7C1D3] rounded-2xl space-y-3">
+                    <img src="./assets/concept.png" alt="concept photo">
+                    <p class="text-sub-heading font-extrabold text-base lg:text-xl">Concept</p>
+                    <p class="text-[#494949]">Streamlined process: idea generation, planning, development, testing,
+                        feedback, and launch for effective results.</p>
+                </div>
+                <!-- box 02  -->
+                <div class="p-6 bg-[#EFDA6E] rounded-2xl space-y-3">
+                    <img src="./assets/flow-chart.png" alt="flow chart photo">
+                    <p class="text-sub-heading font-extrabold text-base lg:text-xl">Design Process</p>
+                    <p class="text-[#494949]">Concept to creation: research, ideation, prototyping, refinement, testing,
+                        and final implementation.</p>
+                </div>
+                <!-- box 03  -->
+                <div class="p-6 bg-[#A4DAC3] rounded-2xl space-y-3">
+                    <img src="./assets/vision.png" alt="vision photo">
+                    <p class="text-sub-heading font-extrabold text-base lg:text-xl">Supervision</p>
+                    <p class="text-[#494949]">Guidance and oversight: setting objectives, monitoring progress, providing
+                        feedback, and ensuring quality outcomes.</p>
+                </div>
+                <!-- box 04  -->
+                <div class="p-6 bg-[#77AAEA] rounded-2xl space-y-3">
+                    <img src="./assets/budget-planning.png" alt="budget photo">
+                    <p class="text-sub-heading font-extrabold text-base lg:text-xl">Budget Planning</p>
+                    <p class="text-[#494949]">Efficient resource allocation: setting financial goals, estimating costs,
+                        tracking expenses, and adjusting as needed.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Read Our Articles and News optional -->
+
+        <!-- my extra Challenge section  -->
+        <section class="bg-white py-12 md:py-16 lg:py-32">
+            <div class="max-w-screen-xl border rounded-lg  mx-auto py-12 px-5 md:px-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 justify-between">
+                    <div
+                        class="h-96 grid place-items-center  bg-[url('./assets/2152.jpg')] bg-center bg-cover bg-no-repeat bg-fixed rounded-xl">
+                        <h2 class="text-white  font-black text-2xl md:text-3xl lg:text-4xl">Interior Design</h2>
+                    </div>
+                    <!-- title part  -->
+                    <div class="space-y-5">
+                        <h2 class="text-heading font-bold text-2xl md:text-3xl lg:text-4xl ">Best Interior Design</h2>
+                        <p class="font-medium text-sub-heading text-justify">Best Interior Design creates stylish,
+                            functional spaces by blending aesthetics, color, lighting, and layout. It adapts to
+                            trends—like minimalism or rustic charm—and emphasizes comfort, balance, and sustainable
+                            materials to enhance any environment’s beauty and purpose. </p>
+
+                        <!-- services  -->
+                        <div
+                            class="h-52 grid place-items-center rounded-xl bg-[url('./assets/Servic20.jpg')] bg-center bg-cover bg-no-repeat bg-fixed">
+                            <h2 class="text-white font-bold text-2xl md:text-3xl lg:text-4xl ">Our Services</h2>
+                            <p class=" bg-slate-300 rounded-full p-2">Our Services are given below <i
+                                    class="fa-solid fa-arrow-down"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- grid service area  -->
+                <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-10">
+                    <!-- service 01  -->
+                    <div class="shadow-2xl p-4 md:p-6 rounded-lg">
+                        <h2 class="text-heading font-bold text-2xl "> Corporate Design</h2>
+                        <p class="font-medium text-sub-heading">The barn house captivates with its blend of rustic charm
+                            and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                    <!-- service 01  -->
+                    <div class="shadow-2xl p-4 md:p-6 rounded-lg">
+                        <h2 class="text-heading font-bold text-2xl">Restaurant Design</h2>
+                        <p class="font-medium text-sub-heading">The barn house captivates with its blend of rustic charm
+                            and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                    <!-- service 01  -->
+                    <div class="shadow-2xl p-4 md:p-6 rounded-lg">
+                        <h2 class="text-heading font-bold text-2xl">Commercial Design</h2>
+                        <p class="font-medium text-sub-heading">The barn house captivates with its blend of rustic charm
+                            and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                    <!-- service 01  -->
+                    <div class="shadow-2xl p-4 md:p-6 rounded-lg">
+                        <h2 class="text-heading font-bold text-2xl">Residential Design</h2>
+                        <p class="font-medium text-sub-heading">The barn house captivates with its blend of rustic charm
+                            and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Latest Portfolio section start here  -->
+        <section class=" bg-white">
+            <div class="max-w-screen-xl bg-white mt-20 mx-auto py-12 px-5 md:px-10">
+                <!-- titel part  -->
+                <div class="text-center flex flex-col gap-6 items-center justify-center mb-9">
+                    <button class="bg-green-100 py-2 px-4 rounded-full"><i class="fa-solid fa-arrow-right"></i> Explore
+                        our Latest works</button>
+                    <h2 class="text-heading font-bold text-2xl md:text-3xl lg:text-4xl ">Our Latest Portfolio</h2>
+                    <p class="font-medium text-sub-heading">Our latest portfolio captures a broad spectrum of projects,
+                        showcasing our dedication to quality, creativity, and cutting-edge technology. </p>
+                </div>
+                <!-- grid container  -->
+                <div class="grid grid-cols-1 md:grid-cols-6 gap-6 ">
+                    <!-- box paragraph 01 -->
+                    <div
+                        class="border p-6 rounded-2xl md:col-span-6 lg:col-span-4  flex flex-col md:flex-row items-center gap-6">
+                        <img class="w-full h-full" src="./assets/img1.png" alt="photo">
+                        <div class="">
+                            <p class="text-sub-heading font-extrabold text-base lg:text-xl">Commercial</p>
+                            <p>Through carefully crafted messages and visuals, commercial advertising seeks to capture
+                                attention, build brand awareness, and encourage potential customers to make purchasing
+                                decisions. </p>
+                            <div>
+                                <a class="font-extrabold text-base lg:text-xl" href="#">
+                                    View Details<i
+                                        class="fa-solid rotate-45 text-center bg-btn-color h-8 w-8 rounded-full fa-arrow-up"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box 02 -->
+                    <div class="border flex-1 p-6 rounded-2xl md:col-span-3 lg:col-span-2">
+                        <img class="w-full h-full" src="./assets/img2.png" alt="">
+                    </div>
+                    <!-- box 3  -->
+                    <div class="border p-6  md:col-span-3 lg:col-span-1 rounded-2xl">
+                        <img class="w-full h-full" src="./assets/img3.png" alt="">
+                    </div>
+                    <!-- box paragraph 04  -->
+                    <div
+                        class="border p-6  rounded-2xl md:col-span-6 lg:col-span-4 flex  flex-col md:flex-row items-center gap-6">
+                        <img class="w-full" src="./assets/img4.png" alt="photo">
+                        <div class="">
+                            <p class="text-sub-heading font-extrabold text-base lg:text-xl">Residential</p>
+                            <p>Commercial advertising is a strategic communication approach focused on promoting
+                                products, services, or brands to a target audience with the goal of influencing consumer
+                                behavior.</p>
+                            <div>
+                                <a class="font-extrabold text-base lg:text-xl" href="#">
+                                    View Details<i
+                                        class="fa-solid rotate-45 text-center bg-btn-color h-8 w-8 rounded-full fa-arrow-up"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box 03  -->
+                    <div class="border p-6 md:col-span-3 lg:col-span-1 lg:hidden  rounded-2xl">
+                        <img class="w-full h-full" src="./assets/img3.png" alt="">
+                    </div>
+
+                    <!-- box 05  -->
+                    <div class="border md:col-span-3  lg:col-span-1 p-6 rounded-2xl  ">
+                        <img class="w-full h-full" src="./assets/img5.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Let’s Discuss Next Project section start here  -->
+        <section class="bg-[url('./assets/bg.jpg')] bg-cover bg-center  ">
+            <div class="max-w-screen-xl  mx-auto py-16 md:py-28 px-5 md:px-16 lg:px-36">
+                <!-- titel part  -->
+                <div class="text-center flex flex-col gap-6 items-center justify-center mb-9">
+                    <button class="bg-green-100 py-2 px-4 rounded-full"><i class="fa-solid fa-arrow-right"></i> Let’s
+                        Connect</button>
+                    <h2 class="text-heading font-bold text-2xl md:text-3xl lg:text-4xl ">Let’s Discuss Next Project</h2>
+                    <p class="font-medium text-sub-heading">Collaborative brainstorming: define objectives, outline
+                        scope, set timelines, and allocate resources for success.</p>
+                </div>
+                <!-- form part  -->
+                <form action="#">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <input class="p-5 w-full mb-4 border-none outline-none rounded-full" type="text" name=""
+                                id="" placeholder="First Name" required>
+                        </div>
+                        <div>
+                            <input class="p-5 w-full mb-4 border-none outline-none rounded-full" type="text" name=""
+                                id="" placeholder="Last Name" required>
+                        </div>
+                        <div>
+                            <input class="p-5 w-full mb-4 border-none outline-none rounded-full" type="text" name=""
+                                id="" placeholder="Phone Number" required>
+                        </div>
+                        <div>
+                            <input class="p-5 w-full mb-4 border-none outline-none rounded-full" type="text" name=""
+                                id="" placeholder="Email Number*" required>
+                        </div>
+                        <div class="md:col-span-2">
+                            <textarea rows="12" class="p-5 rounded-3xl resize-none w-full mb-4 border-none outline-none"
+                                name="" id="" placeholder="Write your message here"></textarea>
+                        </div>
+                        <div class="md:col-span-2">
+                            <button
+                                class=" w-full flex items-center justify-center text-xl font-extrabold gap-1 bg-btn-color rounded-full px-5 py-3">
+                                Send Mail <i
+                                    class="fa-solid rotate-45 text-center bg-black text-white h-8 w-8 rounded-full fa-arrow-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-footer">
+        <section class="max-w-screen-xl  mx-auto py-16 md:py-28 px-5 md:px-16 lg:px-36">
+            <div class="text-center flex flex-col gap-6 items-center justify-center mb-9">
+                <div>
+                    <a class="font-extrabold text-slate-200  text-2xl lg:text-3xl" href="https://www.google.com">
+                        <i class="fa-solid rotate-45 text-center bg-btn-color h-8 w-8 rounded-full fa-arrow-up"></i>
+                        Tailwind_CSS</a>
+                </div>
+                <p class="font-medium text-stone-400">Collaborative brainstorming: define objectives, outline scope, set
+                    timelines, and allocate resources for success. This barn house design combines rustic charm with
+                    modern appeal. High ceilings, large windows, and natural materials create an open, airy space.</p>
+                <ul class="flex gap-7 flex-col md:flex-row text-stone-300">
+                    <li class="hover:font-bold duration-200 ease-in">Home</li>
+                    <li class="hover:font-bold duration-200 ease-in">Services</li>
+                    <li class="hover:font-bold duration-200 ease-in">Portfolio</li>
+                    <li class="hover:font-bold duration-200 ease-in">Blogs</li>
+                    <li class="hover:font-bold duration-200 ease-in">Contact Us</li>
+                </ul>
+                <button
+                    class=" flex items-center justify-center text-xl font-extrabold gap-1 bg-btn-color rounded-full px-5 py-3">
+                    Book Consult <i
+                        class="fa-solid rotate-45 text-center bg-black text-white h-8 w-8 rounded-full fa-arrow-up"></i>
+                </button>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
